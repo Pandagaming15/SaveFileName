@@ -1,5 +1,4 @@
 #include "library.h"
-#include "CGame.h"
 
 // SAUtils
 #include <isautils.h>
