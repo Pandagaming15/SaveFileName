@@ -31,7 +31,7 @@ jobs:
 
     - run: mv ./AndroidModLoader-main/mod ./mod
 
-    - run: git clone https://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@github.com/RusJJ/GTASAAndroid_Structs ./structs
+    - run: git clone https://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@github.com/RusJJ/GTASAAndroid_Structs ./structs
 
     - run: mv ./structs/* ./
 
