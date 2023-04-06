@@ -31,7 +31,7 @@ jobs:
 
     - run: mv ./AndroidModLoader-main/mod ./mod
 
-    - run: git clone https://Pandagaming15:@Keira091415@github.com/RusJJ/GTASAAndroid_Structs ./structs
+    - run: git clone https://Pandagaming15@github.com/RusJJ/GTASAAndroid_Structs ./structs
 
     - run: mv ./structs/* ./
 
