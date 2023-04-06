@@ -30,7 +30,7 @@ jobs:
 
     - run: mv ./AndroidModLoader-main/mod ./mod
 
-    - run: git clone https://RusJJ:${{secrets.SECRET_TOKEN}}@github.com/RusJJ/GTASAAndroid_Structs ./structs
+    - run: git clone https://github.com/RusJJ/GTASAAndroid_Structs ./structs
 
     - run: mv ./structs/* ./
 
