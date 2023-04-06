@@ -1,9 +1,5 @@
 #include "library.h"
 
-// SAUtils
-#include <isautils.h>
-ISAUtils* sautils = NULL;
-
 #define sizeofA(__aVar)  ((int)(sizeof(__aVar)/sizeof(__aVar[0])))
 MYMODCFG(SaveGameFileName, SaveGameFileName, 1.0, PandaGaming)
 
