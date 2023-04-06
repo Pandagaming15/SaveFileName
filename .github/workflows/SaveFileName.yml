@@ -30,11 +30,15 @@ jobs:
 
     - run: mv ./AndroidModLoader-main/mod ./mod
 
+    - run: git clone https://RusJJ:${{secrets.SECRET_TOKEN}}@github.com/RusJJ/GTASAAndroid_Structs ./structs
+
+    - run: mv ./structs/* ./
+
     - uses: nttld/setup-ndk@v1
 
       with:
 
-        ndk-version: r24
+        ndk-version: r21
 
         local-cache: true
 
