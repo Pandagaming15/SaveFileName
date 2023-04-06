@@ -1,3 +1,4 @@
+
 name: AML Mod Compiler
 
 on:
@@ -30,7 +31,7 @@ jobs:
 
     - run: mv ./AndroidModLoader-main/mod ./mod
 
-    - run: git clone https://github.com/RusJJ/GTASAAndroid_Structs ./structs
+    - run: git clone https://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@github.com/RusJJ/GTASAAndroid_Structs ./structs
 
     - run: mv ./structs/* ./
 
@@ -45,6 +46,9 @@ jobs:
     - run: ndk-build NDK_PROJECT_PATH=. APP_BUILD_SCRIPT=./Android.mk NDK_APPLICATION_MK=./Application.mk
 
     - uses: actions/upload-artifact@v3
+
       with:
+
         name: compiled-mods-zip
+
         path: ./libs
