@@ -7,6 +7,5 @@ ConfigEntry* name;
 
 extern "C" void OnModLoad()
 {
-	name = cfg->Bind("Name", "GTASAMP", "SaveFile");
-	CHook::MemCopy((char*)libs.pGame + 0x6B012C, name->GetString());
+	CHook::MemCopy((char*)libs.pGame + 0x6B012C, 'KYLE');
 }
